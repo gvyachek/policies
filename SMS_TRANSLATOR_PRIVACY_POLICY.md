@@ -1,112 +1,78 @@
-# SMS Translator Privacy Policy
+# Privacy Policy for SMS Translator
 
-**Effective date:** [Month DD, YYYY]
+**Last Updated:** October 14, 2026  
+**Application:** SMS Translator (`com.smstranslator.app`)
 
-This Privacy Policy explains how [Company or individual name] ("we," "us," or
-"our") collects, uses, stores, and shares information when you use [name of
-SMS translator service or app] (the "Service").
+Welcome to SMS Translator ("we", "our", or "the app"). We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how our application handles your data when you use SMS Translator as your default SMS messaging application on Android.
 
-Before publishing this policy, replace every bracketed item with accurate
-information about the Service and remove any section that does not apply. This
-template is not legal advice.
+---
 
-## Information We Handle
+## 1. Overview & Core Privacy Principles
 
-Depending on how the Service works, we may handle:
+SMS Translator is designed from the ground up with **privacy-first, on-device processing**:
+- **On-Device Machine Learning:** All text translations are performed locally on your device using on-device machine learning models (Google ML Kit). **Your messages and SMS content are never sent to external servers or cloud services for translation.**
+- **No Data Selling or Sharing:** We do not sell, rent, monetize, or share your messages, contacts, or personal data with any third parties or advertisers.
+- **Minimal Permissions:** We only request permissions necessary to provide core SMS messaging, contact display, and translation features.
 
-- **Phone numbers and account details:** [Describe the phone numbers, account
-  identifiers, or other details collected and how they are obtained.]
-- **SMS content:** [Describe whether message contents are received, translated,
-  stored, logged, or deleted, and whether attachments are processed.]
-- **Translation and usage data:** [Describe languages, timestamps, delivery
-  status, diagnostic logs, and other usage data collected.]
-- **Device and technical data:** [Describe any device, app, network, or log data
-  collected.]
+---
 
-Do not send sensitive personal information in SMS messages unless the Service
-is expressly designed and authorized to process it.
+## 2. Information Accessed and Processed
 
-## How We Use Information
+### A. SMS and MMS Messages (`RECEIVE_SMS`, `READ_SMS`, `SEND_SMS`)
+- **Purpose:** SMS Translator operates as a **Default SMS Handler**. It accesses your SMS and MMS messages strictly to allow you to send, receive, view, organize, and search your text messages.
+- **Translation:** When you view or translate a message, the translation occurs 100% locally on your device. Message contents are never transmitted across the network for translation.
+- **Storage:** Messages are stored in the standard Android system telephony database on your device.
 
-We use information only as described here and as necessary to operate and
-protect the Service, including to:
+### B. Contacts (`READ_CONTACTS`)
+- **Purpose:** To associate phone numbers with your contacts and display familiar contact names and profile pictures in conversation lists.
+- **Processing:** Contact lookups occur entirely in-memory and on-device. Your contact list is never uploaded or shared.
 
-- receive and deliver SMS messages and provide translations;
-- maintain, troubleshoot, and secure the Service; and
-- [Describe any additional purposes, such as customer support or legal
-  compliance.]
+### C. Blocked Numbers & Spam Protection
+- **Purpose:** To filter unwanted messages and block spam numbers.
+- **Processing:** Blocked numbers are stored in a local SQLite database on your device and synchronized with Android's system-level blocked number provider (`BlockedNumberContract`).
 
-## Translation Providers and Other Service Providers
+### D. Notifications (`POST_NOTIFICATIONS`)
+- **Purpose:** To notify you of incoming text messages and translation status.
 
-To translate or deliver messages, the Service may share relevant information
-with providers that support [translation, SMS delivery, hosting, analytics, or
-other functions]. Identify those providers or categories here:
+---
 
-- [Provider or category, information shared, and purpose]
+## 3. Third-Party Services & Diagnostics
 
-These providers may process information under their own terms and privacy
-policies. Describe any safeguards or restrictions that apply:
+### Firebase Crashlytics
+To monitor application stability and fix bugs, SMS Translator uses **Firebase Crashlytics** (provided by Google LLC).
+- **What is collected:** Anonymous diagnostic data, including crash stack traces, app version, operating system version, device model, and free RAM/disk space.
+- **Zero Personal Identifiable Information (Zero PII):** Our crash reporting configuration strictly strips and excludes all personal data. **No SMS message bodies, phone numbers, contact names, or one-time passcodes (OTPs) are ever transmitted to Crashlytics.**
+- For more details, review Google's Privacy Policy: [https://policies.google.com/privacy](https://policies.google.com/privacy).
 
-- [Describe applicable contractual, security, or data-processing safeguards.]
+---
 
-## Storage, Retention, and Security
+## 4. Data Sharing and Disclosure
 
-Message contents and related data are [describe where and how they are stored,
-including whether storage is encrypted]. We retain them for [retention period
-or criteria] and then [describe deletion or anonymization]. Explain any
-exceptions, such as backups or legally required retention:
+We do **not** sell, rent, disclose, or share any personal data with third parties. We do not use third-party analytics trackers, advertising networks, or data brokers.
 
-- [Describe exceptions and their duration.]
+---
 
-We use [describe reasonable administrative, technical, and organizational
-security measures]. No method of transmission or storage is completely secure.
+## 5. Data Retention, Security, and Deletion
 
-## Sharing and Disclosure
+- **Local Storage:** All app preferences, translation history, and blocked numbers reside exclusively in protected private app storage on your device.
+- **Deletion:** You can delete individual messages or entire conversations at any time directly from the app, which removes them from your device.
+- **App Data Clear:** You can permanently clear all local application data or uninstall the application at any time through Android Settings (**Settings > Apps > SMS Translator > Storage > Clear Data**).
 
-We do not [sell/share] personal information [if accurate]. We may disclose
-information:
+---
 
-- to the providers described above to operate the Service;
-- when required by law or valid legal process;
-- to protect the rights, safety, and security of users, the Service, or others;
-  or
-- in connection with a business transfer, subject to applicable law.
+## 6. Children's Privacy
 
-[Describe any other sharing, advertising, analytics, or disclosure practices.]
+SMS Translator is not directed to children under the age of 13, and we do not knowingly collect personal information from children.
 
-## Your Choices and Privacy Rights
+---
 
-You can stop using the Service at any time. To request access, correction, or
-deletion of information, or to exercise other rights available where you live,
-contact us using the details below.
+## 7. Changes to This Privacy Policy
 
-Depending on your location, you may have additional rights, including the
-right to object to or restrict certain processing, withdraw consent, or lodge a
-complaint with a privacy regulator. We will handle requests as required by
-applicable law.
+We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date.
 
-## Children
+---
 
-The Service is [not intended for children under age [age] / intended for users
-aged [age] and older]. [Describe how information relating to children is
-handled and how a parent or guardian can contact you.]
+## 8. Contact Us
 
-## International Processing
-
-Information may be processed in [countries or regions]. Where required, we use
-appropriate safeguards for international transfers, such as [describe
-safeguards].
-
-## Changes to This Policy
-
-We may update this policy from time to time. We will post the updated version
-at [policy URL or location] and revise the effective date above. [Describe how
-users will be notified of material changes.]
-
-## Contact
-
-For privacy questions or requests, contact:
-
-- **Organization:** [Company or individual name]
-- **Email:** [Privacy contact email]
-- **Mailing address:** [Mailing address, if applicable]
+If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:
+- **Email:** slava.v.guskov@gmail.com
