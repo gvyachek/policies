@@ -1,6 +1,6 @@
 # Privacy Policy for SMS Translator
 
-**Last Updated:** October 14, 2026  
+**Last Updated:** October 16, 2026  
 **Application:** SMS Translator (`com.smstranslator.app`)
 
 Welcome to SMS Translator ("we", "our", or "the app"). We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how our application handles your data when you use SMS Translator as your default SMS messaging application on Android.
@@ -18,21 +18,35 @@ SMS Translator is designed from the ground up with **privacy-first, on-device pr
 
 ## 2. Information Accessed and Processed
 
-### A. SMS and MMS Messages (`RECEIVE_SMS`, `READ_SMS`, `SEND_SMS`)
-- **Purpose:** SMS Translator operates as a **Default SMS Handler**. It accesses your SMS and MMS messages strictly to allow you to send, receive, view, organize, and search your text messages.
+### A. SMS and MMS Messages (`RECEIVE_SMS`, `READ_SMS`, `SEND_SMS`, `RECEIVE_MMS`, `RECEIVE_WAP_PUSH`)
+- **Purpose:** SMS Translator operates as a **Default SMS Handler**. It accesses your SMS and MMS messages strictly to allow you to send, receive, view, organize, and search your messages, including picture messages and group conversations.
+- **Delivery:** Messages you send, and picture messages you receive, travel through your mobile carrier's SMS/MMS service, exactly as with any other messaging app. SMS Translator does not route them through any server of its own.
 - **Translation:** When you view or translate a message, the translation occurs 100% locally on your device. Message contents are never transmitted across the network for translation.
 - **Storage:** Messages are stored in the standard Android system telephony database on your device.
 
-### B. Contacts (`READ_CONTACTS`)
+### B. Photos You Attach
+- **How you pick them:** When you attach a photo, SMS Translator uses Android's system photo picker. The app only receives the photo you select; it does **not** request access to your photo library or storage.
+- **Processing:** The selected photo is resized and compressed **on your device** so it fits your carrier's size limit, then sent as an MMS to the recipients you chose.
+- **Storage:** Sent and received pictures are stored in the standard Android system telephony database, like your other messages. When you open an attachment in another app, a temporary copy is placed in SMS Translator's private cache so that app can display it.
+
+### C. Phone State (`READ_PHONE_STATE`)
+- **Purpose:** To let you choose which SIM card sends a message on dual-SIM phones, and to recognize your own phone number so group picture messages are filed in the right conversation.
+- **Processing:** This information is used only on your device and is never stored outside Android's own records or transmitted.
+
+### D. Contacts (`READ_CONTACTS`)
 - **Purpose:** To associate phone numbers with your contacts and display familiar contact names and profile pictures in conversation lists.
 - **Processing:** Contact lookups occur entirely in-memory and on-device. Your contact list is never uploaded or shared.
 
-### C. Blocked Numbers & Spam Protection
+### E. Blocked Numbers & Spam Protection
 - **Purpose:** To filter unwanted messages and block spam numbers.
 - **Processing:** Blocked numbers are stored in a local SQLite database on your device and synchronized with Android's system-level blocked number provider (`BlockedNumberContract`).
 
-### D. Notifications (`POST_NOTIFICATIONS`)
+### F. Notifications (`POST_NOTIFICATIONS`)
 - **Purpose:** To notify you of incoming text messages and translation status.
+
+### G. Translation Language Packs
+- **Purpose:** On-device translation needs a language pack for each language (about 30 MB each). SMS Translator downloads these packs from Google's servers when you choose them in Settings or during setup.
+- **Processing:** Only the request for the language pack is sent. **No message content is ever included.**
 
 ---
 
