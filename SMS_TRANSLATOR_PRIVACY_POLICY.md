@@ -50,7 +50,7 @@ SMS Translator is designed from the ground up with **privacy-first, on-device pr
 
 ---
 
-## 3. Third-Party Services & Diagnostics
+## 3. Google Services & Diagnostics
 
 ### Firebase Crashlytics
 To monitor application stability and fix bugs, SMS Translator uses **Firebase Crashlytics** (provided by Google LLC).
@@ -58,11 +58,17 @@ To monitor application stability and fix bugs, SMS Translator uses **Firebase Cr
 - **Zero Personal Identifiable Information (Zero PII):** Our crash reporting configuration strictly strips and excludes all personal data. **No SMS message bodies, phone numbers, contact names, or one-time passcodes (OTPs) are ever transmitted to Crashlytics.**
 - For more details, review Google's Privacy Policy: [https://policies.google.com/privacy](https://policies.google.com/privacy).
 
+### Google ML Kit (on-device translation)
+Translation runs entirely on your device with **Google ML Kit**. Like other Google SDKs, ML Kit sends Google anonymous diagnostic and usage information so Google can keep it working well.
+- **What is sent:** Device information (manufacturer, model, Android version), app package name and version, a per-installation identifier that is not intended to identify you or your device, performance metrics, error codes, the language pair you translate between, and the language ML Kit detected for a message.
+- **What is never sent:** The text of your messages, their translations, phone numbers, or contact names.
+- This data is encrypted in transit and is not shared with third parties. See Google's description: [https://developers.google.com/ml-kit/android-data-disclosure](https://developers.google.com/ml-kit/android-data-disclosure).
+
 ---
 
 ## 4. Data Sharing and Disclosure
 
-We do **not** sell, rent, disclose, or share any personal data with third parties. We do not use third-party analytics trackers, advertising networks, or data brokers.
+We do **not** sell, rent, disclose, or share any personal data with third parties. Apart from the anonymous Google diagnostics described in Section 3, we use no analytics trackers, advertising networks, or data brokers.
 
 ---
 
